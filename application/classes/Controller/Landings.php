@@ -19,4 +19,11 @@ class Controller_Landings extends Controller_Base_preDispatch
         $this->template->content = View::factory('templates/landings/special', $this->view);
     }
 
+    public function action_telegram()
+    {
+        $this->title = 'bot contest';
+        $this->description = 'challenge for the greatest minds';
+        $this->template->content = View::factory('templates/landings/telegram', $this->view);
+    }
+
 }

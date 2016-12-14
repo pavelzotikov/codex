@@ -210,7 +210,7 @@ Route::set('ARTICLE_EDITOR_SAVE_IMG', 'editorsaveimg', array())->defaults(array(
 * Landing pages
 */
 Route::set('LANDINGS', '<action>', array(
-   'actions' => 'bot|org|special'
+   'actions' => 'bot|org|special|telegram'
 ))->defaults(array(
    'controller' => 'landings'
 ));
